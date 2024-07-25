@@ -1,15 +1,14 @@
 # Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository of DHGS:Decoupled Hybrid Gaussian Splatting for Driving Scene.
 
 If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
+@article{shi2024dhgs,
+  author    = {Xi, Shi and Lingli, Chen and Peng, Wei and Xi, Wu and Tian, Jiang and Yonggang, Luo and Lecheng, Xie},
+  title     = {DHGS:Decoupled Hybrid Gaussian Splatting for Driving Scen},
+  journal   = {arXiv preprint arXiv:2407.16600},
+  year      = {2024},
 ```
 
 # Website License
