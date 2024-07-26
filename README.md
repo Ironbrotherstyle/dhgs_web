@@ -6,7 +6,7 @@ If you find DHGS useful for your work please cite:
 ```
 @article{shi2024dhgs,
   author    = {Xi, Shi and Lingli, Chen and Peng, Wei and Xi, Wu and Tian, Jiang and Yonggang, Luo and Lecheng, Xie},
-  title     = {DHGS:Decoupled Hybrid Gaussian Splatting for Driving Scen},
+  title     = {DHGS: Decoupled Hybrid Gaussian Splatting for Driving Scen},
   journal   = {arXiv preprint arXiv:2407.16600},
   year      = {2024},
 ```
