@@ -1,4 +1,4 @@
-# Nerfies
+# DHGS
 
 This is the repository of DHGS: Decoupled Hybrid Gaussian Splatting for Driving Scene.
 
