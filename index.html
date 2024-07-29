@@ -159,15 +159,15 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/pipline.png"
+      <img src="./static/images/pipeline.png"
       class="interpolation-image"
       alt="Interpolate start reference image."/>
       </img>
       <h2 class="subtitle has-text-centered">
-        The pipeline of the proposed method for driving scene reconstruction. For consecutive multi-camera images and corresponding road and non-road masks, 
-        we firstly generate decoupled road pcd (point cloud) and environment pcd, a road SDF is then pre-trained as the following supervision for road gaussian 
-        model. Environment pcd enables the initialization for environment Gaussian model which composes rendered images with images by paratactic road model 
-        via proposed Depth-ordered rendering.
+        The pipeline of the proposed method for driving scene reconstruction. Given consecutive multi-camera images along with their respective road and non-road masks,
+         we initially generate decoupled road pcd (point cloud) and environment pcd, a road SDF is then pre-trained as subsequent guidance for the road Gaussian model. 
+         The Environment pcd enables the initialization for the environment Gaussian model which composes rendered images with images by paratactic road model via the 
+         proposed depth-ordered hybrid rendering.
       </h2>
     </div>
   </div>
@@ -240,31 +240,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Existing Gaussian splatting methods struggle to achieve
-            satisfactory novel view synthesis in driving scenes due
-            to the lack of crafty design and geometric constraints
-            of related elements. This paper introduces a novel
-            method called Decoupled Hybrid Gaussian Splatting
-            (DHGS), which aims at promoting the rendering qual
-           ity of novel view synthesis for driving scenes. The
-            novelty of this work lies in the decoupled and hybrid
-            pixel-level blender for road and non-road layers, with
-           out conventional unified differentiable rendering logic
-            for the entire scene, meanwhile maintaining consistent
-            and continuous superimposition through the proposed
-            depth-ordered rendering strategy. Beyond that, an im
-           plicit road representation comprised of Signed Distance
-            Field (SDF) is trained to supervise the road surface with
-            subtle geometric attributes. Accompanied by the use of
-            auxiliary transmittance loss and consistency loss, novel
-            images with imperceptible boundary and elevated fi
-           delity are ultimately obtained. 
+            Existing Gaussian splatting methods often fall short in achieving satisfactory novel view synthesis in driving scenes, 
+            primarily due to the absence of crafty design and geometric constraints for the involved elements. This paper introduces 
+            a novel neural rendering method termed Decoupled Hybrid Gaussian Splatting (DHGS), targeting at promoting the rendering 
+            quality of novel view synthesis for static driving scenes. The novelty of this work lies in the decoupled and hybrid pixel-level 
+            blender for road and non-road layers, without the conventional unified differentiable rendering logic for the entire scene, while 
+            still maintaining consistent and continuous superimposition through the proposed depth-ordered hybrid rendering strategy. Additionally, 
+            an implicit road representation comprised of a Signed Distance Field (SDF) is trained to supervise the road surface with subtle geometric 
+            attributes. Accompanied by the use of auxiliary transmittance loss and consistency loss, novel images with imperceptible boundary and 
+            elevated fidelity are ultimately obtained. 
           </p> 
 
           <p>
-           Substantial experiments
-            on Waymo dataset prove that DHGS outperforms the
-            state-of-the-art methods.
+            Substantial experiments on the Waymo dataset prove that DHGS outperforms the state-of-the-art methods.
           </p> 
           <!-- <p>
             We present the first method capable of photorealistically reconstructing a non-rigidly
@@ -357,9 +345,9 @@
             alt="Interpolate start reference image."/>
             </img>
             <p>
-              The schematic of the proposed depth-ordered hybrid rendering strategy for the environment and road model.
-               Corresponding primitives of each model generate pixels with colors independently through Gaussian splatting. 
-               These colors are then composited based on their rendered depths and transmittances, producing the final rendered image.
+              The diagram illustrates the proposed depth-ordered hybrid rendering strategy for the environment and road model. 
+              Corresponding primitives of each model generate pixels with colors independently through Gaussian splatting. 
+              These colors are then composited based on their rendered depths and transmittances, producing the final rendered image.
             </p>
           </div>
 
@@ -382,18 +370,18 @@
             alt="Interpolate start reference image."/>
             </img>
             <p>
-              Comparison of different methods on Waymo dataset, the left column and right column showcase the quality of scene
-              reconstruction and novel view synthesis respectively. Our method achieves high-quality reconstruction for both the environment
-              region and the road region, outperforming other comparative methods in both aspects.
+              Comparison of different methods on the Waymo dataset, the left column and right column display the quality of scene 
+              reconstruction and novel view synthesis respectively. Our method achieves high-quality reconstruction for both the 
+              environment region and the road areas, excelling over other comparative methods in these aspects.
             </p>
             <img src="./static/images/nvs_3.png"
             class="interpolation-image"
             alt="Interpolate start reference image."/>
             </img>
             <p>
-              Visual comparisons on the free-view novel view synthesis. The left and right columns respectively showcase the results
-              of Set3 and Set4 under the free viewpoint setting, where our method significantly outperforms other comparative methods in
-              both road and environment details.
+              Visual comparisons on the free-view novel view synthesis. The left and right columns respectively exhibit the results 
+              of Set3 and Set4 under the free viewpoint setting, where our method significantly outperforms other 
+              comparative methods in capturing both road and environment details.
             </p>
             <!-- <div class="content has-text-justified">
               <p>
@@ -477,8 +465,8 @@
             alt="Interpolate start reference image."/>
             </img>
             <p>
-              The top row represents the camera layouts after applying various camera pose settings from a bird’s eye view, 
-              while the bottom row shows the same transformations from a side view
+              The top row represents the camera layouts after applying various camera pose settings from a bird's eye view, 
+              while the bottom row shows the same transformations from a side view.
             </p>
           </div>
         </div>
