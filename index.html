@@ -49,7 +49,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">DHGS: Decoupled Hybrid Gaussian Splatting for Driving Scene</h1>
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <style>
               .author-block a {
                 text-decoration: none !important;
@@ -75,20 +75,20 @@
             <span class="author-block">
               <a href="javascript:void(0);">Lecheng Xie</a><sup>1</sup>
             </span>
+          </div> -->
+
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block"> </a><sup>1</sup> Changan Auto, AILab </span> -->
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"> </a><sup>1</sup> Changan Auto, AILab </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"></a><sup>2</sup> State Key Laboratory of Intelligent Vehicle Safety Technology </span>
+            <!-- <span class="author-block"></a><sup>2</sup> State Key Laboratory of Intelligent Vehicle Safety Technology </span> -->
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/pdf/2407.16600"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -96,7 +96,7 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
@@ -117,7 +117,7 @@
                 </a>
               </span> -->
               <!-- Code Link. -->
-              <span class="link-block"> 
+              <!-- <span class="link-block"> 
                 <a href="https://github.com/Ironbrotherstyle/DHGS" 
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -125,7 +125,8 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
+
               <!-- Dataset Link. -->
               <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
@@ -480,10 +481,74 @@
 </section>
 
 
+  <!--qualitative dynamic result -->
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Free-view novel view results in Dynamic Scenes</h2>
+        <div class="container is-max-desktop">
+          <div class="content has-text-centered">
+            <img src="./dynamic/images/concat_img.png"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+            <!-- </img>
+            <img src="./dynamic/images/096.png"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+            </img> -->
+            <p>
+              Visual comparisons on the free-view novel view synthesis in dynamic driving scenes. The 1st, 2nd and 3rd rows respectively exhibit the results of 
+              Ground Truth of reconstructing view, Set4 perspective view of Street Gaussian and Set4 perspective view of our method, where 
+              our method outperforms Street Gaussian in capturing road details.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- dynamic video result -->
+  <section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+          <h2 class="title is-3">Free-view novel view videos in Dynamic Scenes</h2>
+          <!-- <div class="content has-text-justified">
+            <p>
+              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+              viewpoint such as a stabilized camera by playing back the training deformations.
+            </p>
+          </div> -->
+          <div class="content has-text-centered">
+            <video id="replay-video"
+                  controls
+                  muted
+                  preload
+                  playsinline
+                  autoplay
+                  loop
+                  width="100%">
+              <source src="./dynamic/videos/053_demo_4k.mp4"
+                      type="video/mp4">
+            </video>
+            <p>
+              The 1st, 2nd and 3rd rows respectively exhibit the results of 
+              Ground Truth of reconstructing view, Street Gaussian and our method under free-view novel view synthesis, where 
+              our method outperforms Street Gaussian in capturing road details.
+            <p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
-<section class="section" id="BibTeX">
+
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{shi2024dhgs,
@@ -493,7 +558,7 @@
   year      = {2024},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
